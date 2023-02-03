@@ -18,7 +18,7 @@ async function getStartWeatherData() {
   const response = await fetch(startWeather);
   const data = await response.json();
   var startingCity = localStorage.getItem("startCity")
-
+   
 
   forecastDiv.textContent = ""
 
