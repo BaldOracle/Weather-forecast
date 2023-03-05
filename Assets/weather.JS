@@ -48,9 +48,8 @@ async function getCordinates(event) {
 //using the existing tiles to get city name then get the courdinates. 
 async function oldCordinates(event) {
   event.preventDefault();
+  forecastDiv.innerHTML = ""
   //pulling city name if typed in the City name
-  //let inputLocation = document.getElementById("PrevCities").innerText
-
   //https://www.w3schools.com/jsref/event_target.asp
      
   let cityName = event.target.innerText
@@ -148,7 +147,7 @@ async function getCurrentWeatherData(startingCity, longitude, latitude) {
           <li class="list-group-item">Temp: ${data.main.temp}</li>
           <li class="list-group-item">Wind Speed: ${data.wind.speed}</li>
           <li class="list-group-item">Humidity: ${data.main.humidity}</li>
-          <li class="list-group-item">${data.dt_txt}</li>
+          <li class="list-group-item">Weather now</li>
         </ul>
       </div>
       </div>
