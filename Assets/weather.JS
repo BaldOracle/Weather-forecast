@@ -32,7 +32,8 @@ async function getCordinates(event) {
   }
   var cityName = inputLocation.trim()
 
-  var cityCordinatesAPI = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + weatherApiKey
+  var cityCordinatesAPI = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + weatherApiKey
+ + cityName + '&limit=5&appid=' + weatherApiKey
   const response = await fetch(cityCordinatesAPI);
   const data = await response.json();
   var longitude = data[0].lon
