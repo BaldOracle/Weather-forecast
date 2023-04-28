@@ -32,7 +32,7 @@ async function getCordinates(event) {
   }
   var cityName = inputLocation.trim()
 
-  var cityCordinatesAPI = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + weatherApiKey
+  var cityCordinatesAPI = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + weatherApiKey
   const response = await fetch(cityCordinatesAPI);
   const data = await response.json();
   var longitude = data[0].lon
@@ -54,7 +54,7 @@ async function oldCordinates(event) {
      
   let cityName = event.target.innerText
   //let cityName = inputLocation.trim()
-  var cityCordinatesAPI = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + weatherApiKey
+  var cityCordinatesAPI = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + weatherApiKey
   const response = await fetch(cityCordinatesAPI);
   const data = await response.json();
   var longitude = data[0].lon
@@ -98,7 +98,7 @@ async function getStartWeatherData(startingCity, longitude, latitude) {
     
       <div class="card" >
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="http://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png" alt="Card image cap">
+        <img class="card-img-top" src="https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">${startingCity}</h5>
           <p class="card-text">${data.list[i].weather[0].description}</p>
@@ -138,7 +138,7 @@ async function getCurrentWeatherData(startingCity, longitude, latitude) {
     
       <div class="card" >
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Card image cap">
+        <img class="card-img-top" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">${startingCity}</h5>
           <p class="card-text">${data.weather[0].description}</p>
