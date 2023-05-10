@@ -2,7 +2,7 @@
 
 ## Description
 
-This website is a study guide for my full stack coding boot camp. The goal was tow create a resource I could update as needed with information throughout the course. I learned how to use git hub and google dev. I have updated the website with different notes. 
+Weather Forecast is a website I created during my full stack coding class as a study guide and resource to be updated throughout the course. During the development of the site, I learned how to use Git and Google Dev tools. The website contains different notes and information that I added to it. 
 
 
 
@@ -16,7 +16,7 @@ Enter city name and get current weather and 5 day forecast.
 
 ## Credits
 
-(https://openweathermap.org/faq)
+The website uses data from the OpenWeatherMap API.
 
 
 ## License
